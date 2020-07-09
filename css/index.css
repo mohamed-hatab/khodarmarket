@@ -53,6 +53,10 @@
   /* transform: translateX(-100%); */
 }
 
+.categories img{
+    width: 100%
+}
+
 .category{
   margin-bottom: 30px;
 }
