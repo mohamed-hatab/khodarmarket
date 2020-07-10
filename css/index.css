@@ -4,36 +4,176 @@
   padding: 0;
 }
 
-.navy{
+/* navbar media query */
+
+@media only screen and (max-width: 1200px){
+nav{
   width: 100%;
-  height: 10vh;
+  color: white;
+  font-size: 2rem;
   background-color:#BBCF3D;
+  height: 6vh;
   position: sticky;
   top:0;
-  z-index: 1;
+  z-index: 1
+}
+
+.myNav{
+  height: 6vh;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo{
-  float: left;
-  height:8vh;
+  height: 4vh;
   width: auto;
 }
 
-.user{
-  margin-top: 40px 30px 0px 30px;
-  color: white;
-  font-size: 32px;
+.logo-footer{
+  height: 10vh;
+  width: auto;
+  display: block;
+  margin-bottom: 40px;
 }
 
-.cart{
-  margin: 40px 30px 0px 30px;
-  color: white;
-  font-size: 32px;
+.features{
+  min-height:50vh;
+  text-align: center;
+  margin-bottom:80px;
 }
 
-.buttons{
-  float: right;
+.feature{
+  display: block;
+  margin: auto;
+  min-height: 10vh;
+  border: 2px solid #B2ACAB;
+  border-radius: 10px;
+  margin-bottom: 40px;
 }
+
+.feature i{
+  margin:50px 0px;
+  font-size: 3em;
+  color: #BBCF3D
+}
+
+.feature h3{
+  margin-bottom: 100px;
+}
+
+.complain{
+  background-image: url("../images/pattern2.png");
+  font-size: 50px;
+  color: white;
+  padding: 80px;
+  display: flex;
+  min-height: 25vh;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.idea{
+  background-image: url("../images/pattern1.png");
+  font-size: 50px;
+  color: white;
+  padding: 80px;
+  display: flex;
+  min-height: 25vh;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+}
+
+@media only screen and (min-width: 1200px){
+nav{
+  width: 100%;
+  color: white;
+  font-size: 2rem;
+  background-color:#BBCF3D;
+  height: 15vh;
+  position: sticky;
+  top:0;
+  z-index: 1
+}
+
+.myNav{
+  height: 15vh;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  height: 10vh;
+  width: auto;
+}
+
+.logo-footer{
+  height: 30vh;
+  width: auto;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.features{
+  height:100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.feature{
+  padding: 25px;
+}
+
+.feature-container{
+  min-height: 25vh;
+  border: 2px solid #B2ACAB;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.feature i{
+  margin:50px 0px;
+  font-size: 3em;
+  color: #BBCF3D
+}
+
+.feature h3{
+  margin-bottom: 100px;
+}
+
+.complain{
+  background-image: url("../images/pattern2.png");
+  font-size: 50px;
+  color: white;
+  padding: 80px;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.idea{
+  background-image: url("../images/pattern1.png");
+  font-size: 50px;
+  color: white;
+  padding: 80px;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+}
+
 
 #carouselExampleControls{
   margin-bottom: 80px;
@@ -54,7 +194,7 @@
 }
 
 .categories img{
-    width: 100%
+  width:100%
 }
 
 .category{
@@ -77,33 +217,8 @@
   transform: translateX(-70%);
 }
 
-.feature{
-  text-align: center;
-  /* padding: 100px; */
-  margin: auto;
-}
 
-.features{
-  margin-bottom: 100px;
-}
 
-.features i{
-  font-size: 50px;
-  color: #BBCF3D;
-  margin-bottom: 50px;
-}
-
-.features h3{
-  color: #9d9e9c;
-  margin-bottom: 60px;
-}
-
-.featureContainer{
-  border:2px solid #BBCF3D;
-  border-radius: 10px;
-  padding: 30px;
-  margin-bottom: 50px;
-}
 
 .complainsAndIdeas{
   margin-bottom: 100px;
@@ -112,7 +227,7 @@
   position: relative;
 }
 
-.complain{
+/* .complain{
   background-image: url("../images/pattern2.png");
   font-size: 50px;
   color: white;
@@ -124,13 +239,46 @@
   font-size: 50px;
   color: white;
   padding: 80px;
-}
+} */
 
 
 .footerr{
-  height: 100vh;
+  min-height: 30vh;
+  width: 100%;
   background-image: url("../images/footer.png");
+  padding: 60px;
+  color: white;
 }
+
+.footerr h5{
+  margin-bottom: 50px;
+}
+
+#section2-footer{
+  padding-right: 30px;
+}
+
+#section2-footer h5{
+  margin-bottom: 10px;
+}
+
+#section2-footer i{
+  margin:5px;
+}
+
+#section3-footer {
+  padding-right: 30px;
+}
+
+#section3-footer h3{
+  margin-bottom: 30px;
+}
+
+#section3-footer h5{
+  margin-bottom: 10px;
+}
+
+
 
 #activeCat{
   transform: translateX(0);
