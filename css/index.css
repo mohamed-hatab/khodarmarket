@@ -43,6 +43,10 @@ nav{
   margin-bottom:80px;
 }
 
+.features > *{
+  transform: translateX(-100%);
+}
+
 .feature{
   display: block;
   margin: auto;
@@ -63,7 +67,7 @@ nav{
 }
 
 .complain{
-  background-image: url("images/pattern2.png");
+  background-image: url("../images/pattern2.png");
   font-size: 50px;
   color: white;
   padding: 80px;
@@ -75,7 +79,7 @@ nav{
 }
 
 .idea{
-  background-image: url("images/pattern1.png");
+  background-image: url("../images/pattern1.png");
   font-size: 50px;
   color: white;
   padding: 80px;
@@ -149,7 +153,7 @@ nav{
 }
 
 .complain{
-  background-image: url("images/pattern2.png");
+  background-image: url("../images/pattern2.png");
   font-size: 50px;
   color: white;
   padding: 80px;
@@ -161,7 +165,7 @@ nav{
 }
 
 .idea{
-  background-image: url("images/pattern1.png");
+  background-image: url("../images/pattern1.png");
   font-size: 50px;
   color: white;
   padding: 80px;
@@ -222,18 +226,29 @@ nav{
 
 .complainsAndIdeas{
   margin-bottom: 100px;
-  /* padding: 0px 200px 0px 200px; */
   text-align:center;
   position: relative;
+}
+
+.complainsAndIdeas h1{
+  transition: transform 1s;
+}
+
+.complainsAndIdeas h1:hover{
+  transform: scale(1.3);
 }
 
 
 .footerr{
   min-height: 30vh;
   width: 100%;
-  background-image: url("images/footer.png");
+  background-image: url("../images/footer.png");
   padding: 60px;
   color: white;
+}
+
+.footerr > * {
+  opacity: 0
 }
 
 .footerr h5{
@@ -265,7 +280,21 @@ nav{
 }
 
 
-
-#activeCat{
-  transform: translateX(0);
+.fade{
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+.slideLeft{
+  animation-name: slideLeft;
+  animation-duration: 4s;
+  animation-fill-mode: both;
+}
+@keyframes fade {
+  from {opacity: 0}
+  to{opacity: 1}
+}
+@keyframes slideLeft {
+  from{transform: translateX(-100%)}
+  to{transform: translateX(0);}
 }
