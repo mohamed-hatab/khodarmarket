@@ -63,7 +63,7 @@ nav{
 }
 
 .complain{
-  background-image: url("../images/pattern2.png");
+  background-image: url("images/pattern2.png");
   font-size: 50px;
   color: white;
   padding: 80px;
@@ -75,7 +75,7 @@ nav{
 }
 
 .idea{
-  background-image: url("../images/pattern1.png");
+  background-image: url("images/pattern1.png");
   font-size: 50px;
   color: white;
   padding: 80px;
@@ -149,7 +149,7 @@ nav{
 }
 
 .complain{
-  background-image: url("../images/pattern2.png");
+  background-image: url("images/pattern2.png");
   font-size: 50px;
   color: white;
   padding: 80px;
@@ -161,7 +161,7 @@ nav{
 }
 
 .idea{
-  background-image: url("../images/pattern1.png");
+  background-image: url("images/pattern1.png");
   font-size: 50px;
   color: white;
   padding: 80px;
@@ -227,25 +227,11 @@ nav{
   position: relative;
 }
 
-/* .complain{
-  background-image: url("../images/pattern2.png");
-  font-size: 50px;
-  color: white;
-  padding: 80px;
-}
-
-.idea{
-  background-image: url("../images/pattern1.png");
-  font-size: 50px;
-  color: white;
-  padding: 80px;
-} */
-
 
 .footerr{
   min-height: 30vh;
   width: 100%;
-  background-image: url("../images/footer.png");
+  background-image: url("images/footer.png");
   padding: 60px;
   color: white;
 }

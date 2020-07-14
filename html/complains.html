@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Khodar market | Home page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/complains-suggestions.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/060f7a4d4d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="background">
+    <nav>
+      <div class="container myNav">
+        <i class="fas fa-bars menu"></i>
+        <img class="logo" src="../images/v3.png" alt="">
+      </div>
+    </nav>
+
+    <div id="complain-form" class="container-lg form-container" dir="rtl">
+      <h1 class="text-center">ارسل شكوى</h1>
+      <h5 class="text-center">ارضاء العملاء هو هدفنا الاساسي <br> في حالة وجود اي مشكلة سارع بابلاغنا للحل</h5>
+      <form class="complain" action="complains.html" method="post">
+        <input type="text" name="name" value="" placeholder="الاسم">
+        <input type="text" name="phone" value="" placeholder="رقم التليفون">
+        <textarea type="text" name="complain" value="" placeholder="المشكلة التي مريت بها"></textarea>
+        <div class="file-upload">
+          <h5>ارفاق صور</h5>
+          <input type="file" name="complain-photos" value="" placeholder="ارفاق صور">
+        </div>
+      </form>
+      <button type="submit" form="complain-form" value="Submit">ارسال</button>
+    </div>
+
+    <div class="footerr" dir="rtl">
+      <div class="row">
+        <div class="col-12">
+          <img class="logo-footer" src="../images/logo-white.png" alt="">
+        </div>
+        <div class="col-4 text-right" id="section1-footer">
+          <h3><i class="fas fa-map-marker-alt"></i> المقر الاداري</h3>
+          <h5>25 شارع صلاح سالم - عمارات حدائق العبور - أمام بانوراما حرب أكتوبر - هيليوبلس - القاهرة </h5>
+          <h3><i class="fas fa-map-marker-alt"></i> المعرض</h3>
+          <h5>شارع 90 الشمالى - التجمع الخامس - القاهرة الجديدة - داخل محطة بنزينة موبيل </h5>
+        </div>
+        <div class="col-4 text-right" id="section2-footer">
+          <h3> <span style="color:#E9324B;font-size:3rem">|</span> تابعنا</h3>
+          <h5>اذا كنت تود معرفة المزيد من العروض والاخبار تابعنا علي مواقع التواصل الاجتماعي</h5>
+          <h3>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </h3>
+        </div>
+        <div class="col-4 text-right" id="section3-footer">
+          <h3><i class="fas fa-phone"></i> تواصل معنا</h3>
+          <h5>20-123-456-7890+</h5>
+          <h5>20-353-908-66+</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var textarea = document.querySelector("textarea")
+    textarea.addEventListener("click",function(){textarea.classList.add("click")})
+  </script>
+</body>
